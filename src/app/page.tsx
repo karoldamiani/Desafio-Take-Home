@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-      <div className="col-span-3 max-w-sm mt-2">
+      <div className="col-span-1 md:col-span-3 max-w-sm m-1 md:mt-2">
         <div className="col-span-1">
           <div className="relative flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute w-5 h-5 top-2.5 left-2.5 text-slate-600">
@@ -54,7 +54,7 @@ export default function Home() {
       </div>
 
       {filteredUsers.map((user) => (
-        <div className="bg-white shadow-sm border border-slate-200 rounded-lg">
+        <div className="bg-white shadow-sm border border-slate-200 rounded-lg ml-1 mr-1 mb-1">
           <div className="p-4">
             <h5 className="mb-2 text-slate-800 text-xl font-semibold">
               {user.name}
